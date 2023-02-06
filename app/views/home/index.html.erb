@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <div class="row border border-info rounded">
+    <h4 class="text-center">Language</h4>
+  </div>
+  <div class="row">
+      <div class="col-md border border-info bg-orange text-center ">
+      <%= form_with url: "/users/sign_up", method: :get do |form| %>
+        <h4 class="p-5">I am a Japanese Learner.</h4>
+        <h4 class="p-5">私は日本語学習者です。</h4>
+        <button type="submit" class="btn-orange p-2">ENTER</button>
+        <h4 class="p-5">I am a lob Seeker for Japanese
+  Company.</h4>
+        <h4 class="p-5">私は日本企業への就職を希望しています。</h4>
+      <% end %>
+    </div>
+
+    <div class="col-md border border-info bg-green text-center">
+      <%= form_with url: "signup_form/index", method: :get do |form| %>
+        <h4 class="p-5">外国人材を求める日本企業です。</h4>
+        <h4 class="p-5">We are lapanese company that seeks talents from all over the world</h4>
+        <button type="submit" class="btn-green p-2">ENTER</button>
+        <h4 class="p-5"></h4>
+      <% end %>
+    </div>
+  </div>
+  <div class="row border border-info bg-blue">
+    <h4 class="text-left">このサイトについて 他</h4>
+  </div>
+</div>
